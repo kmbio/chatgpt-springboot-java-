@@ -92,6 +92,8 @@ Page({
     // 页面初始化 options为页面跳转所带来的参数
     var _self = this
     this.initUserLogin();
+    app.getRecordAuth()
+
     this.setData({
       title:'AI聊天'
     })
@@ -304,8 +306,6 @@ Page({
   sendInfo:function(){
     // 校验输入框是否有内容
     if(!this.checkSendInfoValue())return false
-    // 校验剩余回答次数是否足够
-    if(!app.checkLeftAnswerTime())return false
 
     let that = this 
     //校验用户信息

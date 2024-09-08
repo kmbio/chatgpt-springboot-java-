@@ -36,10 +36,10 @@
         <input focus="{{sendInputFocus}}" placeholder="输入您想问的..."  bindinput="sendInfoOfSendValueInput"  value="{{sendInfoValue}}"  class="sendInput" wx:if="{{yy.yy_flag == false}}"/>
         
         <!--  科大讯飞  前端发起websocket 模式 语音听写 -->
-        <!-- <button class="longTabTalk"  wx:else="" bindlongpress="start_say" bindtouchend="end_say" bindtouchmove="cancelRecorderManager">按住 说话</button> -->
+        <button class="longTabTalk"  wx:else="" bindlongpress="start_say" bindtouchend="end_say" bindtouchmove="cancelRecorderManager">按住 说话</button>
         
         <!-- 腾讯 一句话识别模式 -->
-        <button class="longTabTalk"  wx:else="" bindlongpress="startRecorderManager" bindtouchend="stopRecorderManager" bindtouchmove="cancelRecorderManager">按住说话 松开结束</button>
+        <!-- <button class="longTabTalk"  wx:else="" bindlongpress="startRecorderManager" bindtouchend="stopRecorderManager" bindtouchmove="cancelRecorderManager">按住说话 松开结束</button> -->
     
         <!-- 科大讯飞后端发起 websocket 模式 语音听写 -->
         <!-- <button class="longTabTalk"  wx:else="" bindlongpress="startRecorderManager" bindtouchend="stopRecorderManager_javaSocket" bindtouchmove="cancelRecorderManager">按住 说话</button> -->
